@@ -30,17 +30,17 @@ const SignUp = () => {
   });
 
   const onCreateAccount = () => {
-
-    if(!email || !password || !fullName){
+    if (!email || !password || !fullName) {
       console.error(
         "Please fill in all fields: Full Name, Email, and Password."
       );
-      return ;
+      return;
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
+        router.replace("/mytrip");
         console.log(user);
         // ...
       })
@@ -119,7 +119,8 @@ const SignUp = () => {
       </View>
 
       {/* CreateAccount */}
-      <TouchableOpacity onPress={onCreateAccount}
+      <TouchableOpacity
+        onPress={onCreateAccount}
         style={{
           padding: 15,
           backgroundColor: Colors.Primary,
