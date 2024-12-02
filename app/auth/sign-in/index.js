@@ -70,7 +70,7 @@ const onSignIn=()=>{
       >
         Welcome Back
       </Text>
-      <Text
+      {/* <Text
         style={{
           fontSize: 30,
           marginTop: 10,
@@ -78,7 +78,7 @@ const onSignIn=()=>{
         }}
       >
         You've been missed!
-      </Text>
+      </Text> */}
 
       {/* Email */}
       <View
