@@ -20,7 +20,7 @@ export default function SelectTraveller() {
   }, []);
 
   useEffect(() => {
-    setTripData({ ...tripData, traveller: selectedTraveler });
+    setTripData({ ...tripData, traveler: selectedTraveler });
   }, [selectedTraveler]);
 
   useEffect(() => {
